@@ -1,0 +1,76 @@
+/* Estilos Generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: green;
+    height: 100vh;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+  }
+  
+  /* Estilos carta */
+  
+  .card {
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  span {
+    font-size: 150px;
+    margin: 20px;
+    color: red;
+    padding: 0;
+    line-height: 0.6;
+  }
+  
+  .icono-superior {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .icono-inferior {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotateX(180deg);
+  }
+  
+  .number {
+    font-size: 270px;
+    line-height: 1;
+  }
+  
+  button {
+    padding: 15px;
+    margin: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .timer {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+  }
+  
