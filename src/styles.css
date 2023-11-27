@@ -1,76 +1,55 @@
-/* Estilos Generales */
+body {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: green;
-    height: 100vh;
-  }
-  
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    flex-direction: column;
-  }
-  
-  /* Estilos carta */
-  
-  .card {
-    background-color: white;
-    width: 400px;
-    height: 600px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  
-  span {
-    font-size: 150px;
-    margin: 20px;
-    color: red;
-    padding: 0;
-    line-height: 0.6;
-  }
-  
-  .icono-superior {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .icono-inferior {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transform: rotateX(180deg);
-  }
-  
-  .number {
-    font-size: 270px;
-    line-height: 1;
-  }
-  
-  button {
-    padding: 15px;
-    margin: 50px;
-    border: 2px solid black;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: large;
-    font-weight: bold;
-  }
-  
-  .timer {
-    font-size: 50px;
-    font-weight: bold;
-    color: black;
-  }
-  
+.card {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .center {
+  font-size: 80px;
+}
+
+.card .suit {
+  position: absolute;
+  font-size: 40px;
+}
+
+.card .top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.card .bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+.card.hearts .suit:before {
+  content: '♥';
+}
+
+.card.clubs .suit:before {
+  content: '♣';
+}
+
+.card.diamonds .suit:before {
+  content: '♦';
+}
+
+.card.spades .suit:before {
+  content: '♠';
+}
